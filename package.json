@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "start": "npm run migrate && concurrently \"php artisan serve\" \"php artisan schedule:work\"",
+        "migrate": "php artisan migrate --force",
+        "docker-start": "npm run migrate && php artisan config:cache && php artisan serve --host=0.0.0.0 --port=8000"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.0",
+        "postcss": "^8.4.47",
+        "tailwindcss": "^3.4.13",
+        "vite": "^6.0"
+    }
+}
