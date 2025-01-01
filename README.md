@@ -8,11 +8,16 @@
 ## Instructions
 
 - Install docker
-- Install php (reference the versions above)
-- Install laravel (reference the versions above)
-- Navigate your way into your preferred project directory
+- Install php (refer to the versions above)
+- Install laravel (refer to the versions above)
 
-## COMMANDS
+## Clone and run the project
+
+- Navigate your way into your preferred project directory
+- git clone <https://github.com/JuliusWinston/case-study-api.git>
+- Run the command 'git pull origin main'
+
+## COMMANDS (in the project's root folder)
 
 - docker compose up --build --detach
 - docker compose exec app bash
